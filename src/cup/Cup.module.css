@@ -1,0 +1,14 @@
+.cup {
+    object-fit: contain;
+    image-rendering: pixelated;
+    -webkit-user-drag: none;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    width: 200px;
+    height: 200px;
+    top: 650px;
+    left: 73%;
+    transform: translateX(-54%);
+}
