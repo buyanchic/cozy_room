@@ -12,6 +12,7 @@ import CupImage9 from '../assets/cup/cup9.png'
 import CupImage10 from '../assets/cup/cup10.png'
 import CupImage11 from '../assets/cup/cup11.png'
 import CupImage12 from '../assets/cup/cup12.png'
+import {handleClick} from "../utils/animation.ts";
 
 export function Cup() {
     const cupFrames = [
@@ -31,30 +32,12 @@ export function Cup() {
 
     const [cupFrame, setCupFrame] = useState(0)
 
-    ///TODO
-    const handleCupClick = () => {
-        const totalFrames = cupFrames.length;
-        const cycles = 1;
-        const animationSteps = totalFrames * cycles;
-        const delayMs = 100;
-
-        for (let i = 0; i < animationSteps; i++) {
-            setTimeout(() => {
-                setCupFrame(i % totalFrames);
-            }, i * delayMs);
-        }
-
-        setTimeout(() => {
-            setCupFrame(0);
-        }, animationSteps * delayMs);
-    }
-
     return (
         <img
             src={cupFrames[cupFrame]}
             alt="CupImage"
             className={styles.cup}
-            onClick={handleCupClick}
+            onClick={() => handleClick(cupFrames, setCupFrame, 1, 100)}
         />
     )
 }
