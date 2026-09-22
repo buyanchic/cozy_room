@@ -1,4 +1,6 @@
-export const handleClick = (frames: string[], setFrame: (arg0: number) => void, cycles: number, delayMs: number, sound?: string ) => {
+
+export const handleClick = (frames: string[], setFrame: (arg0: number) => void, cycles: number = 1, delayMs: number = 1000, sound?: string ) => {
+
     if (sound) {
         const audio = new Audio(sound);
         audio.play();

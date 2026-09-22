@@ -1,0 +1,14 @@
+.window {
+    object-fit: contain;
+    image-rendering: pixelated;
+    -webkit-user-drag: none;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    width: 900px;
+    height: 640px;
+    top: -60px;
+    left: 36%;
+    transform: translateX(-54%);
+}

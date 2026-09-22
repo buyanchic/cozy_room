@@ -34,10 +34,10 @@ export function Cup() {
 
     return (
         <img
-            src={cupFrames[cupFrame]}
-            alt="CupImage"
-            className={styles.cup}
-            onClick={() => handleClick(cupFrames, setCupFrame, 1, 100)}
-        />
+        src={cupFrames[cupFrame]}
+        alt="CupImage"
+        className={styles.cup}
+        onClick={() => handleClick(cupFrames, setCupFrame, 1, 100)}
+    />
     )
 }
