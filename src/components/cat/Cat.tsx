@@ -1,7 +1,7 @@
 import styles from './Cat.module.css'
 import {useState} from "react";
-import CatImage1 from '../assets/cat/cat.png'
-import {changeClick} from "../utils/change.ts";
+import CatImage1 from '../../assets/cat/cat.png'
+import {changeClick} from "../../utils/change.ts";
 
 export const Cat = () => {
     const catFrames = [CatImage1]

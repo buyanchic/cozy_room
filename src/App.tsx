@@ -1,10 +1,10 @@
 import './App.css'
 import RoomImage from './assets/room_base.png'
-import {Cup} from "./cup/Cup.tsx";
-import {Keyboard} from "./keyboard/Keyboard.tsx";
-import {Window} from "./window/Window.tsx";
-import {Cat} from "./cat/Cat.tsx";
-import {Monitor} from "./monitor/Monitor.tsx";
+import {Cup} from "./components/cup/Cup.tsx";
+import {Keyboard} from "./components/keyboard/Keyboard.tsx";
+import {Window} from "./components/window/Window.tsx";
+import {Cat} from "./components/cat/Cat.tsx";
+import {Monitor} from "./components/monitor/Monitor.tsx";
 
 function App() {
 
